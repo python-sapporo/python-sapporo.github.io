@@ -1,7 +1,20 @@
-Title: welcome
+Title: Welcome to Python Sapporo
 save_as: index.html
 status: hidden
 
-# python sapporo
+# Python札幌とは
 
-Hello world!
+Python札幌は2009年から開始した北海道札幌市周辺で活動する[プログラミング言語Python](http://www.python.org)のコミュニティです。
+業務でPythonを実際に活用している職業プログラマから、学生、初心者まで幅広く交流しています。
+
+現在は初学者向けの読書会と、2ヶ月に1回程度の発表形式の勉強会を中心に活動しています。
+
+# Pythonとは
+
+Pythonはオブジェクト指向を備えたオープンソース・フリーソフトウェアのプログラミング言語です。 [ja.Wikipedia: Python](http://ja.wikipedia.org/wiki/Python)
+
+Pythonでシンプルは簡潔な構文で記述しやすく初めてプログラミングを学ぶための言語として適しています。学習用というだけでなく、近年のLinux向けのシステム管理ツールなどの多くがPythonで書かれています。また、商業流通している製品のカスタマイズ用スクリプト言語としても取り入れられており、さまざまな分野でPythonを活用することができます。[ja.Wikipedia: Pythonを使っている製品あるいはソフトウェアの一覧](http://ja.wikipedia.org/wiki/Python%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E8%A3%BD%E5%93%81%E3%81%82%E3%82%8B%E3%81%84%E3%81%AF%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E4%B8%80%E8%A6%A7)
+
+# お知らせ
+
+2014/06下旬 新サイトをGithub pagesにて準備
