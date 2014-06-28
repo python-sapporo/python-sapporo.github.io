@@ -18,14 +18,17 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
+LINKS = (('Python Sapporo Google Sites', 'https://sites.google.com/site/pythonsapporo/'),
+         ('Python Sapporo Mailing List (Google Group)', 'https://groups.google.co.jp/group/python-sapporo'),
+         ('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
          ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+#         ('You can modify those links in your config file', '#'),
+         )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+#SOCIAL = (('You can add links in your config file', '#'),
+#          ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = 10
 
