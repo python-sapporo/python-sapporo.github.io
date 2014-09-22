@@ -17,6 +17,7 @@ Slug: history
 | Python札幌3.14 (第9回) | 2011/10/09 | [ATND](http://atnd.org/events/19619) |
 | Python札幌 2012/06/17 (第10回) | 2012/06/17 | [ATND](http://atnd.org/events/29789) |
 | [Python札幌・復活記念特別勉強会 2014-06-15 @tokibitoさんスペシャル (第11回)]({filename}../season6/20140623.md) | 2014/06/15 | [conpass](http://connpass.com/event/6121/) |
+| Python札幌・勉強会 2014-09-20 (第12回) | 2014/09/20 | [conpass](http://connpass.com/event/8543/) |
 
 # Python初学者向け読書会@札幌 #1
 |勉強会|開催日|告知サイト|
