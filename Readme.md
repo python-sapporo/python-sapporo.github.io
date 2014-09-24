@@ -2,19 +2,32 @@
 
 # How to generate
 
+## Install
 Pelicanを利用しています。
+
 ```sh
-pip install pelican markdown
+pip install -r requirements.txt
 ```
 
-HTMLの生成
+## ウェブページの更新
+content以下がウェブページの元となるファイルなので、これらのファイルを編集します。
+
+## HTMLの生成
 ```sh
 make html
 ```
 
-サーバの起動
+## HTMLの確認
 ```sh
 make serve PORT=8000
 ```
 
-http://localhost:8000/にアクセスして確認。
+http://localhost:8000/にアクセスして確認します。
+
+## 公開
+```sh
+make github
+```
+
+## 参考
+[Pelican + Markdown + GitHub Pagesで管理するブログの作り方 - blog@sotm.jp](http://blog.sotm.jp/2014/01/04/Pelican-Markdown-GithubPages-install-guide/)
