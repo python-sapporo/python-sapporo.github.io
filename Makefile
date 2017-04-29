@@ -32,6 +32,11 @@ ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
 endif
 
+RELATIVE ?= 0
+ifeq ($(RELATIVE), 1)
+	PELICANOPTS += --relative-urls
+endif
+
 help:
 	@echo 'Makefile for a pelican Web site                                        '
 	@echo '                                                                       '
@@ -41,6 +46,7 @@ help:
 	@echo '   make regenerate                  regenerate files upon modification '
 	@echo '   make publish                     generate using production settings '
 	@echo '   make serve [PORT=8000]           serve site at http://localhost:8000'
+	@echo '   make serve-global [SERVER=0.0.0.0]  serve (as root) to $(SERVER):80    '
 	@echo '   make devserver [PORT=8000]       start/restart develop_server.sh    '
 	@echo '   make stopserver                  stop local server                  '
 	@echo '   make ssh_upload                  upload the web site via SSH        '
@@ -52,6 +58,7 @@ help:
 	@echo '   make github                      upload the web site via gh-pages   '
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
+	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                       '
 
 html:
@@ -70,6 +77,13 @@ else
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server
 endif
 
+serve-global:
+ifdef SERVER
+	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 $(SERVER)
+else
+	cd $(OUTPUTDIR) && $(PY) -m pelican.server 80 0.0.0.0
+endif
+
 devserver:
 ifdef PORT
 	$(BASEDIR)/develop_server.sh restart $(PORT)
@@ -78,8 +92,7 @@ else
 endif
 
 stopserver:
-	kill -9 `cat pelican.pid`
-	kill -9 `cat srv.pid`
+	$(BASEDIR)/develop_server.sh stop
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 publish:
@@ -98,13 +111,14 @@ ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
 s3_upload: publish
-        s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed --guess-mime-type
+	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed --guess-mime-type --no-mime-magic --no-preserve
 
 cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
-	ghp-import -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
+	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+.PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+
