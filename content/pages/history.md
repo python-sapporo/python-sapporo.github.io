@@ -25,7 +25,7 @@ Slug: history
 | Python入門者向けハンズオン #2 2015-10-02 | 2015/10/02 | [connpass](https://python-sapporo.connpass.com/event/19731/) |
 | Python入門者向けハンズオン 2015-08-22 | 2015/08/22 | [Facebook](https://www.facebook.com/events/692213864243707/) |
 
-# Python初学者向け読書会@札幌 #1
+# Python初学者向け読書会@札幌
 |勉強会|開催日|告知サイト|
 |-|-|-|
 | Python初学者向け読書会@札幌 #19| 2014/07/11 | [connpass](http://connpass.com/event/7328/) |
@@ -45,8 +45,8 @@ Slug: history
 | Python初学者向け読書会@札幌 #5 | 2011/11/01 | [ATND](http://atnd.org/events/21478) |
 | Python初学者向け読書会@札幌 #4 | 2011/10/18 | [ATND](http://atnd.org/events/20734) |
 | Python初学者向け読書会@札幌 #3 | 2011/10/04 | [ATND](http://atnd.org/events/20362) |
-| Python初学者向け読書会@札幌 #1 | 2011/09/10 | [ATND](http://atnd.org/events/19532) |
 | Python初学者向け読書会@札幌 #2 | 2011/09/20 | [ATND](http://atnd.org/events/19825) |
+| Python初学者向け読書会@札幌 #1 | 2011/09/10 | [ATND](http://atnd.org/events/19532) |
 
 # Python札幌・ミニ勉強会
 |勉強会|開催日|告知サイト|
