@@ -19,6 +19,11 @@ Slug: history
 | Python札幌 第2回勉強会 | 2009/06/21 | [ATND](http://atnd.org/events/870) |
 | Python札幌 第1回勉強会 | 2009/05/09 | [ATND](http://atnd.org/events/547) |
 
+# Python札幌 プログラム初学者向けハンズオン
+|勉強会|開催日|告知サイト|
+|-|-|-|
+| Python札幌 プログラム初学者向けハンズオン 2017年 #1 | 2017/06/03 | [connpass](https://python-sapporo.connpass.com/event/56660/) |
+
 # Python入門者向けハンズオン
 |勉強会|開催日|告知サイト|
 |-|-|-|

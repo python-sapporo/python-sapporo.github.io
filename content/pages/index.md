@@ -23,7 +23,7 @@ Pythonでシンプルは簡潔な構文で記述しやすく初めてプログ�
 
 # お知らせ
 
-* 2017年6月3日(土)に [Python札幌 プログラム初学者向けハンズオン　2017年 #1](https://python-sapporo.connpass.com/event/56660/) を開催します。
+* 2017年7月15日(土)の [OSC 2017 Hokkaido](https://www.ospn.jp/osc2017-do/)に参加します。MicroPython の動作するボードのデモ展示、chibi:bit 上で使う MicroPython のセミナーを行います。
 
-* 2017年7月15日の [OSC 2017 Hokkaido](https://www.ospn.jp/osc2017-do/)に参加します。MicroPython の動作するボードのデモ展示、chibi:bit 上で使う MicroPython のセミナーを行います。
+* 2017年8月5日(土)に [Python札幌 プログラム初学者向けハンズオン　2017年 #2](https://python-sapporo.connpass.com/event/61897/) を開催します。
 
